@@ -29,13 +29,13 @@ function rebol2() {
 	docker run --rm -ti -v $(pwd):/root/host -v /tmp:/tmp -e DISPLAY=$DISPLAY_MAC rebol2 $1
 }
 ```
-Don't forger to restart the terminal afterwards or source it.
+Don't forget to restart the terminal afterwards or source it.
 
 ### Step 3: Build Docker image ###
 
 `$ docker build https://github.com/vazub/rebol2-docker.git -t rebol2`
 
-### Step 4: Run Xquartz and socat ###
+### Step 4: Run XQuartz and socat ###
 `$ startx`
 
 ### Step 5: Run Rebol container with arguments ###
