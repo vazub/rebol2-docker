@@ -1,4 +1,4 @@
-# Rebol 2 Dockerized for MacOS #
+# Rebol 2 dockerized for MacOS #
 
 Here is the latest public version of Rebol 2 to use with Docker. This flow was created primarily to use Rebol with the latest MacOS versions (64-bit), but might as well work on other host systems.
 
