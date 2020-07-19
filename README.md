@@ -1,11 +1,11 @@
 # Rebol 2 dockerized for MacOS #
 
-Here is the latest public version of Rebol 2 to use with Docker. This flow was created primarily to use Rebol with the latest MacOS versions (64-bit), but might as well work on other host systems with minor adjustments.
+Here is the latest public version of Rebol 2 to use with Docker. This flow was created primarily to use Rebol with the latest MacOS versions (Catalina+, 64-bit), but might as well work on other host systems with minor adjustments.
 
 ## Usage ##
 
 ### Step 1: Install Docker, XQuartz and socat ###
-Easiest way is to use Homebrew:
+Easiest way is to use [Homebrew](https://brew.sh/):
 
 `$ brew update`
 
@@ -16,6 +16,7 @@ Easiest way is to use Homebrew:
 `$ brew install socat`
 
 ### Step 2: Edit `~/.zshrc` file and add to it the following code ###
+Starting with macOS Catalina, Macs will now use Zsh as the default login shell and interactive shell across the operating system. That is why we need to create and/or edit `.zshrc` instead of `.bashrc`.
 
 ```
 export DISPLAY_MAC=`ifconfig en0 | grep "inet " | cut -d " " -f2`:0
