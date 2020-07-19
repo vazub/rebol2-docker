@@ -63,4 +63,4 @@ Clone the Red repo to your machine, go to the repo root folder and run any of th
 `$ rebol2 red.r -r -t Windows %environment/console/GUI/gui-console.red`
 
 ## License ##
-Use of this source code is governed by the [Blue Oak Model License](https://blueoakcouncil.org/license/1.0.0), an exact copy of which can be found in the relevant [LICENSE](./LICENSE) file of the current repository.
+Use of this source code is governed by the [Blue Oak Model License](https://blueoakcouncil.org/license/1.0.0), an exact copy of which can be found in the relevant [LICENSE](./LICENSE.md) file of the current repository.
