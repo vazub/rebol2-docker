@@ -26,7 +26,7 @@ function startx() {
 }
 
 function rebol2() {
-	docker run --rm -ti -v $(pwd):/root/host -v /tmp:/tmp -e DISPLAY=$DISPLAY_MAC rebol2
+	docker run --rm -ti -v $(pwd):/root/host -v /tmp:/tmp -e DISPLAY=$DISPLAY_MAC rebol2 $1
 }
 ```
 Don't forger to restart the terminal afterwards or source it.
