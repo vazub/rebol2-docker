@@ -4,6 +4,8 @@ Here is the latest public version of **Rebol 2** to use with Docker. This flow w
 
 When set up correctly, you will be able to use `rebol2-docker` command as a drop-in replacement for the usual standalone **Rebol** executable in all relevant contexts.
 
+There is also a sister repo, describing how to use **Red** with Docker [here](https://github.com/vazub/red-docker).
+
 - [Build Docker Image](#build-docker-image)
 - [MacOS Setup](#macos-setup)
 - [Windows 10 Setup](#windows-10-setup)
