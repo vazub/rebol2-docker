@@ -70,12 +70,12 @@ Clone the Red repo to your machine, go to the repo root folder and run any of th
 ```
 rebol2-docker red.r %tests/hello.red
 ```
-```
 ### Compile (Linux) CLI console ###
+```
 rebol2-docker red.r -r %environment/console/CLI/console.red
 ```
-```
 ### Compile (Windows) GUI console ###
+```
 rebol2-docker red.r -r -t Windows %environment/console/GUI/gui-console.red
 ```
 ## License ##
