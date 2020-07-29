@@ -1,4 +1,4 @@
-FROM i386/ubuntu:bionic
+FROM i386/ubuntu
 
 RUN apt-get update && apt-get install --no-install-recommends -y wget libfreetype6 libxt6 libxaw7 libcurl4 musl musl-dev musl-tools
 RUN mkdir -p /root/rebol
