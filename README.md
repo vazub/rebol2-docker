@@ -51,12 +51,18 @@ If using WSL versions of distros with Bash shell, run these commands in sequence
 echo $'export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk \'{print $2}\'):0.0' >> ~/.bashrc
 ```
 ```
-echo $'function rebol2-docker {\n\tdocker run --rm -ti -v ~:/root/host -e DISPLAY=$DISPLAY rebol2-docker $1 $2 $3 $4 $5 $6 $7 $8 $9\n}' >> ~/.bashrc
+echo $'function rebol2-docker {\n\tdocker run --rm -ti -v $(pwd):/root/host -e DISPLAY=$DISPLAY rebol2-docker $1 $2 $3 $4 $5 $6 $7 $8 $9\n}' >> ~/.bashrc
 ```
 ```
 source ~/.bashrc
 ```
 Working with other default shells should be the same, just replace output redirection in above commants to your shell's session profile.
+
+**IMPORTANT**: Dockerized Rebol won't currently list files in mounted Widdows paths, so if you want to use it as intended by this particular flow, then keep your project files inside WSL2 distro's filesystem, ex. `/home/<user>/<project>`.
+
+More WSL2 insights and tips on how to setup your workflow can be found here:
+* [Comparing WSL 1 and WSL 2](https://docs.microsoft.com/en-us/windows/wsl/compare-versions)
+* [Developing in WSL](https://code.visualstudio.com/docs/remote/wsl)
 
 ## Usage ##
 Run Rebol with the `rebol2-docker` command. This will start the REPL. Otherwise, you can use it as a drop-in replacement, to run scripts, like this:
