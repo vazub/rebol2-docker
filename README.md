@@ -1,6 +1,3 @@
-# IMPORTANT: This repo has moved to [Gitlab](https://gitlab.com/vazub/rebol2-docker)
-
----
 # Rebol with Docker
 
 Here is the latest public version of **Rebol 2** to use with Docker. This flow was created primarily to use Rebol with the latest MacOS versions (Catalina+, 64-bit) and Windows 10+, but should work on Linux as well, with minor adjustments.
